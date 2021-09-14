@@ -15,7 +15,6 @@ jobs:
       - setup_remote_docker
       - checkout
       - run: docker build -t take-home-a2:latest .
-      - run: docker run -p 3000:3000 take-home-a2:latest
 
 workflows:
   sample:
